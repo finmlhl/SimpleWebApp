@@ -11,6 +11,12 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("young")){
             return "A great man, still living and enjoying his life.";
         }
+        
+        if(query.toLowerCase().contains("multiplied")){
+        	return Integer.toString(Integer.valueOf(query.substring(query.length() - 2, query.length())) * Integer.valueOf(query.substring(query.length() - 19, query.length() - 17)));
+        	//String value =  Integer.toString(Integer.valueOf(query.substring(query.length() - 2, query.length())));
+        	//return value;
+        }
         return "";
     }
 }

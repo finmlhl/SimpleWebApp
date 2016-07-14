@@ -27,6 +27,11 @@ public class QueryProcessorTest {
     @Test
     public void knowsAboutYoung() throws Exception {
         assertThat(queryProcessor.process("Young"), containsString("man"));
+    }    
+    
+    @Test
+    public void knowsAboutMulyiplcation() throws Exception {
+        assertThat(queryProcessor.process("7f18ee40: what is 16 multiplied by 18"), is("288"));
     }
 
 }
